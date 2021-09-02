@@ -12,7 +12,9 @@ def listfill():
 
 cpucount = os.cpu_count()
 cpucount = int(cpucount)
-if __name__ == '__main__':
-    p = Process(target=listfill)
-    p.start()
-    p.join()
+
+for i in range(cpucount):
+    if __name__ == '__main__':
+        p = Process(target=listfill)
+        p.start()
+        p.join()
